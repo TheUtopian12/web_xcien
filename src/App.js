@@ -8,9 +8,9 @@ import {
 
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-import Home from './pages/Home/Home';
-import Services from './pages/Service/Services';
-import Testimonial from './pages/Testimonial/Testimonial';
+import Principal from './pages/Principal/Principal';
+import Services from './pages/Servicios/Servicios';
+import Testimonial from './pages/Nosotros/Testimonial';
 import Navbar from './Components/Navbar/Navbar';
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
     <main>
       <Switch>
         <Route path="/" exact>
-          <Home/>
+          <Principal/>
         </Route>
         <Route path="/about" exact>
           <About/>
