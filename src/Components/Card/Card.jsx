@@ -2,19 +2,20 @@ import React from 'react'
 import "./card.css"
 import antena from '../../assets/Images/antenas-telefonia-telecomunicaciones (1).jpg'
 
-const Card = () => {
+const Card = ({titulo, descripcion, imagen}) => {
+  
   return (
     <div className="flip-card">
     <div className="flip-card-inner">
       <div className="flip-card-front">
-        <img src={antena} alt="Avatar" style={{width:"300px", height:"150px", borderRadius:"25px 25px 0 0"}}/>
-        <h3>Internet</h3>
+        <img src={imagen} alt="Avatar" style={{width:"300px", height:"150px", borderRadius:"25px 25px 0 0"}}/>
+        <h3>{titulo}</h3>
       </div>
       <div className="flip-card-back">
-        <h1>Internet</h1>
+        <h2>{titulo}</h2>
         <br />
-        <p>Mejoramos la seguridad de tu empresa con una conexion interna</p>
-        <br />
+        <p>{descripcion}</p>
+        
         <a href=''>Más Informacion</a>
       </div>
     </div>
