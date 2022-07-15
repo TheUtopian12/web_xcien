@@ -1,5 +1,4 @@
 import bgVideo from "../../assets/aqua.mp4";
-import "./Servicios.css";
 import "./responsive.css";
 import Card from "../../Components/Card/Card";
 import antena from '../../assets/Images/antenas-telefonia-telecomunicaciones (1).jpg'
@@ -9,7 +8,7 @@ import internet from '../../assets/Images/Internet.webp'
 
 const Services = () => {
   return (
-    <div>
+   
       <div className="container">
         <video
           src={bgVideo}
@@ -20,7 +19,7 @@ const Services = () => {
         ></video>
         <h1>Servicios</h1>
         <div id="content1">
-          <Card imagen={internet} titulo={"Internet"} descripcion={"Mejoramos la seguridad de tu empresa con una conexion interna"}/>
+          <Card imagen={internet} titulo={"Internet"} descripcion={"Mejoramos la seguridad de tu empresa con una conexion interna"} url={'/ServiciosInternet'}/>
         </div>
         <div id="content2">
           <Card imagen={antena} titulo={"VPN"} descripcion={"Mejoramos la seguridad de tu empresa con una conexion interna"} />
@@ -33,7 +32,7 @@ const Services = () => {
         </div>
       </div>
       ////////////////FOOTER////////////////////
-    </div>
+   
   );
 };
 export default Services;

@@ -12,6 +12,8 @@ import Principal from './pages/Principal/Principal';
 import Services from './pages/Servicios/Servicios';
 import Testimonial from './pages/Nosotros/Testimonial';
 import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import InternetServices from './pages/InternetServices/InternetServices';
 
 const App = () => {
   return (
@@ -34,9 +36,13 @@ const App = () => {
         <Route path="/contact" exact>
           <Contact/>
         </Route>
+        <Route path="/ServiciosInternet" exact>
+          <InternetServices/>
+        </Route>
         <Redirect to="/" />
       </Switch>
     </main>
+    <Footer/>
    </Router>
   );
 }
