@@ -4,7 +4,7 @@ import "./InternetServices.css";
 const InternetServices = () => {
   return (
     <div className="container1">
-      <div id="contentText" >
+      <div id="contentText">
         <h3>Servicios de Internet</h3>
         <br />
         <p style={{ color: "white", fontSize: "20px" }}>
@@ -18,50 +18,40 @@ const InternetServices = () => {
         <p style={{ color: "white", fontSize: "20px" }}>
           <strong>Seguridad y productividad</strong>
           <br />
-          Mayor rendimiento del equipo de trabajo con un <br /> internet seguro 
+          Mayor rendimiento del equipo de trabajo con un <br /> internet seguro
           (internet+firewall).
         </p>
         <br />
         <p style={{ color: "white", fontSize: "20px" }}>
           <strong>Flexibilidad</strong>
           <br />
-          Planes personalizados de acuerdo a tus necesidades,<br /> nos adaptamos a tu
-          crecimiento. .
+          Planes personalizados de acuerdo a tus necesidades,
+          <br /> nos adaptamos a tu crecimiento. .
         </p>
 
         <br />
         <p style={{ color: "white", fontSize: "20px" }}>
-          <strong>Alta disponibilidad
-</strong>
+          <strong>Alta disponibilidad</strong>
           <br />
           Aseguramos la continuidad de tu negocio.
         </p>
 
-
         <br />
         <p style={{ color: "white", fontSize: "20px" }}>
-          <strong>End to end
-
-</strong>
+          <strong>End to end</strong>
           <br />
-          
-Despreocúpate, nos encargamos de todo. <br />
- Complementa tu servicio con nuestras soluciones <br />
-  (wifi, firewall, orquestador de redes, G suite, telefonía , entre otros).
-
+          Despreocúpate, nos encargamos de todo. <br />
+          Complementa tu servicio con nuestras soluciones <br />
+          (wifi, firewall, orquestador de redes, G suite, telefonía , entre
+          otros).
         </p>
 
-
         <br />
         <p style={{ color: "white", fontSize: "20px" }}>
-          <strong>Soporte técnico
-
-</strong>
+          <strong>Soporte técnico</strong>
           <br />
           Asistencia personalizada, solucionamos tu problema al momento.
         </p>
-
-
       </div>
       <div id="contentCards">
         <InternetCard
@@ -91,6 +81,17 @@ Despreocúpate, nos encargamos de todo. <br />
             "https://zsf2bmwpkpm0.cdn.shift8web.ca/wp-content/uploads/2020/12/internet-para-eventos-1.jpg"
           }
         />
+
+<InternetCard
+          titulo={"Prueba"}
+          url={
+            "https://zsf2bmwpkpm0.cdn.shift8web.ca/wp-content/uploads/2020/12/internet-para-eventos-1.jpg"
+          }
+        />
+        
+
+
+        
       </div>
     </div>
   );

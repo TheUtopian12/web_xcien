@@ -42,7 +42,6 @@ const App = () => {
         <Redirect to="/" />
       </Switch>
     </main>
-    <Footer/>
    </Router>
   );
 }

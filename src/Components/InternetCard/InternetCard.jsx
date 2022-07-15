@@ -7,14 +7,15 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function InternetCard({titulo, url}) {
   return (
+    
     <div>
-      <Accordion style={{width:"500px", boxShadow:"5px 5px 20px;"}}>
+      <Accordion style={{width:"390px", boxShadow:"5px 5px 20px;" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography> <img src={url} alt="" width={150} height={100}/>  {titulo}
+          <Typography> <img src={url} alt="" width={150} height={100} style={{borderRadius:"25px"}}/>  {titulo}
             </Typography>
         </AccordionSummary>
         <AccordionDetails>
