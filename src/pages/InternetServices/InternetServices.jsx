@@ -1,19 +1,61 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import Accordion from "../../Components/Acordion";
 import InternetCard from "../../Components/InternetCard/InternetCard";
+
 import "./InternetServices.css";
 const InternetServices = () => {
+  const [windowDimenion, detectHW] = useState({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  });
+
+  const detectSize = () => {
+    detectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", detectSize);
+
+    return () => {
+      window.removeEventListener("resize", detectSize);
+    };
+  }, [windowDimenion]);
+
   return (
     <div className="container1">
       <div id="contentText">
         <h3>Servicios de Internet</h3>
-        <br />
-        <p style={{ color: "white", fontSize: "20px" }}>
+        <br />$
+        {windowDimenion.winWidth < 900
+          ? <>
+         <br />
+          <Accordion titulo={"Alta velocidad"} descripcion={"Velocidad garantizada con una conexión de internet sin sobresuscripción, planes disponibles hasta 1 GB."}/>
+          <br />
+          <Accordion titulo={"Seguridad y productividad"} descripcion={"Mayor rendimiento del equipo de trabajo con un internet seguro (internet+firewall)."}/>
+          <br />
+          <Accordion titulo={"Flexibilidad"} descripcion={"Planes personalizados de acuerdo a tus necesidades, nos adaptamos a tu crecimiento."}/>
+          <br />
+          <Accordion titulo={"Alta disponibilidad"} descripcion={"Aseguramos la continuidad de tu negocio."}/>
+          <br />
+          <Accordion titulo={"End to end"} descripcion={"Despreocúpate, nos encargamos de todo. Complementa tu servicio con nuestras soluciones (wifi, firewall, orquestador de redes, G suite, telefonía , entre otros)."}/>
+          <br /> 
+          <Accordion titulo={"Soporte técnico"} descripcion={"Asistencia personalizada, solucionamos tu problema al momento."}/>
+          
+          
+          
+          
+          </>
+          : <>
+          
+          <p style={{ color: "white", fontSize: "20px" }}>
           <strong>Alta velocidad</strong>
           <br />
           Velocidad garantizada con una conexión de internet <br /> sin
           sobresuscripción, planes disponibles hasta 1 GB.
         </p>
-
         <br />
         <p style={{ color: "white", fontSize: "20px" }}>
           <strong>Seguridad y productividad</strong>
@@ -28,14 +70,12 @@ const InternetServices = () => {
           Planes personalizados de acuerdo a tus necesidades,
           <br /> nos adaptamos a tu crecimiento. .
         </p>
-
         <br />
         <p style={{ color: "white", fontSize: "20px" }}>
           <strong>Alta disponibilidad</strong>
           <br />
           Aseguramos la continuidad de tu negocio.
         </p>
-
         <br />
         <p style={{ color: "white", fontSize: "20px" }}>
           <strong>End to end</strong>
@@ -45,13 +85,15 @@ const InternetServices = () => {
           (wifi, firewall, orquestador de redes, G suite, telefonía , entre
           otros).
         </p>
-
         <br />
         <p style={{ color: "white", fontSize: "20px" }}>
           <strong>Soporte técnico</strong>
           <br />
           Asistencia personalizada, solucionamos tu problema al momento.
         </p>
+          
+          </>}
+        
       </div>
       <div id="contentCards">
         <InternetCard
@@ -81,12 +123,6 @@ const InternetServices = () => {
             "https://zsf2bmwpkpm0.cdn.shift8web.ca/wp-content/uploads/2020/12/internet-para-eventos-1.jpg"
           }
         />
-
-
-        
-
-
-        
       </div>
     </div>
   );
