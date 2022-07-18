@@ -1,6 +1,7 @@
 import React , {useEffect} from 'react'
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
+import logo from '../../assets/Images/xcien_logo.png'
 import $ from 'jquery';
 
 const Navbar = () => {
@@ -46,10 +47,10 @@ const Navbar = () => {
   return (
   <nav className="navbar navbar-expand-lg navbar-mainbg">
     
-      <NavLink className="navbar-brand navbar-logo" to="/" exact>
-        XCIEN
+      <NavLink className="navbar-brand navbar-logo" to="/" exact >
+       <img src={logo} style={{width:"60px"}}/>
       </NavLink>
-    
+      
     
       <button 
         className="navbar-toggler"
@@ -78,7 +79,7 @@ const Navbar = () => {
             </li>
 
            
-
+          
             <li className="nav-item">
               <NavLink className="nav-link" to="/service" exact>
                 <i 
