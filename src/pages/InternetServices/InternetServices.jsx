@@ -28,7 +28,7 @@ const InternetServices = () => {
     <div className="container1">
       <div id="contentText">
         <h3>Servicios de Internet</h3>
-        <br />$
+        <br />
         {windowDimenion.winWidth < 900
           ? <>
          <br />

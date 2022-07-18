@@ -10,7 +10,7 @@ export default function Acordion({titulo, descripcion}) {
     <div>
       <Accordion>
         <AccordionSummary
-        style={{width:"auto", backgroundColor:'#fff', borderRadius:"15px", boxShadow:"5px 5px 1px #5ad67d"}}
+        style={{width:"380", backgroundColor:'#fff', borderRadius:"15px", boxShadow:"5px 5px 1px #5ad67d"}}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
