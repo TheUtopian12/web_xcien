@@ -82,12 +82,7 @@ const InternetServices = () => {
           }
         />
 
-<InternetCard
-          titulo={"Prueba"}
-          url={
-            "https://zsf2bmwpkpm0.cdn.shift8web.ca/wp-content/uploads/2020/12/internet-para-eventos-1.jpg"
-          }
-        />
+
         
 
 
