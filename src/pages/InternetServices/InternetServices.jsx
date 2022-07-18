@@ -32,17 +32,17 @@ const InternetServices = () => {
         {windowDimenion.winWidth < 900
           ? <>
          <br />
-          <Accordion titulo={"Alta velocidad"} descripcion={"Velocidad garantizada con una conexión de internet sin sobresuscripción, planes disponibles hasta 1 GB."}/>
+          <Accordion ancho={windowDimenion.winWidth} titulo={"Alta velocidad"} descripcion={"Velocidad garantizada con una conexión de internet sin sobresuscripción, planes disponibles hasta 1 GB."}/>
           <br />
-          <Accordion titulo={"Seguridad y productividad"} descripcion={"Mayor rendimiento del equipo de trabajo con un internet seguro (internet+firewall)."}/>
+          <Accordion ancho={windowDimenion.winWidth}  titulo={"Seguridad y productividad"} descripcion={"Mayor rendimiento del equipo de trabajo con un internet seguro (internet+firewall)."}/>
           <br />
-          <Accordion titulo={"Flexibilidad"} descripcion={"Planes personalizados de acuerdo a tus necesidades, nos adaptamos a tu crecimiento."}/>
+          <Accordion ancho={windowDimenion.winWidth}  titulo={"Flexibilidad"} descripcion={"Planes personalizados de acuerdo a tus necesidades, nos adaptamos a tu crecimiento."}/>
           <br />
-          <Accordion titulo={"Alta disponibilidad"} descripcion={"Aseguramos la continuidad de tu negocio."}/>
+          <Accordion ancho={windowDimenion.winWidth}  titulo={"Alta disponibilidad"} descripcion={"Aseguramos la continuidad de tu negocio."}/>
           <br />
-          <Accordion titulo={"End to end"} descripcion={"Despreocúpate, nos encargamos de todo. Complementa tu servicio con nuestras soluciones (wifi, firewall, orquestador de redes, G suite, telefonía , entre otros)."}/>
+          <Accordion ancho={windowDimenion.winWidth}  titulo={"End to end"} descripcion={"Despreocúpate, nos encargamos de todo. Complementa tu servicio con nuestras soluciones (wifi, firewall, orquestador de redes, G suite, telefonía , entre otros)."}/>
           <br /> 
-          <Accordion titulo={"Soporte técnico"} descripcion={"Asistencia personalizada, solucionamos tu problema al momento."}/>
+          <Accordion ancho={windowDimenion.winWidth}  titulo={"Soporte técnico"} descripcion={"Asistencia personalizada, solucionamos tu problema al momento."}/>
           
           
           

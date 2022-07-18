@@ -5,17 +5,18 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export default function Acordion({titulo, descripcion}) {
+export default function Acordion({titulo, descripcion, ancho}) {
   return (
     <div>
-      <Accordion>
+      <Accordion style={{width:`${ancho}px`}}>
         <AccordionSummary
-        style={{width:"380", backgroundColor:'#fff', borderRadius:"15px", boxShadow:"5px 5px 1px #5ad67d"}}
+        style={{ backgroundColor:'#fff', borderRadius:"15px", boxShadow:"5px 5px 1px #5ad67d"}}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
           
         >
+            
           <Typography>{titulo}</Typography>
         </AccordionSummary>
         <AccordionDetails>
